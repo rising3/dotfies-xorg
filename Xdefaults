@@ -1,21 +1,15 @@
-!-------------------------------------------------------------------------------
 ! Xft settings
-!-------------------------------------------------------------------------------
 Xft.dpi:                    96
 Xft.antialias:              true
 Xft.rgba:                   rgb
 Xft.hinting:                true
 Xft.hintstyle:              hintslight
 
-!-------------------------------------------------------------------------------
 ! URxvt settings
-!-------------------------------------------------------------------------------
 URxvt.depth:                32
-URxvt.geometry:             90x30
+URxvt.geometry:             80x24
 URxvt.transparent:          false
 URxvt.fading:               0
-! URxvt.urgentOnBell:         true
-! URxvt.visualBell:           true
 URxvt.loginShell:           true
 URxvt.saveLines:            10000
 URxvt.internalBorder:       3
@@ -33,16 +27,12 @@ URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 
 ! Perl extensions
-URxvt.perl-ext-common:      default,tabbedex,clipboard
+URxvt.perl-ext-common:      default,clipboard
 URxvt.matcher.button:       1
-URxvt.urlLauncher:          google-chrome
-URxvt.keysym.M-t:           perl:tabbedex:new_tab
-URxvt.keysym.M-n:           perl:tabbedex:next_tab
-URxvt.keysym.M-p:           perl:tabbedex:prev_tab
-URxvt.tabbed.no-tabbedex-keys: true
-URxvt.tabbed.not-consumable-keys: 0xff22, 0xff23, 0xff2a
+URxvt.urlLauncher:          firefox
 
 ! Clip Board
+
 URxvt.keysym.Shift-Control-X: perl:clipboard:cut
 URxvt.keysym.Shift-Control-C: perl:clipboard:copy
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
@@ -59,7 +49,6 @@ URxvt.pointerBlank:         true
 URxvt*iso14755: false
 
 ! Color
-! スケスケにするためのパラメータ
 urxvt*shading: 20
 URxvt*inheritPixmap: true
 
@@ -106,14 +95,5 @@ URxvt*color14:      #4eb4fa
 URxvt*color7:       #5f5f5f
 URxvt*color15:      #d0d0d0
 
-!-------------------------------------------------------------------------------
 ! Emacs settings
-!-------------------------------------------------------------------------------
-! 透明にできない...
-Emacs*foreground: white
-Emacs*background: black
-
-!emacs.transparent: false
-!emacs*shading: 10
-
 Emacs*useXIM: true
