@@ -92,8 +92,8 @@ URxvt*color6:       #3579a8
 URxvt*color14:      #4eb4fa
 
 !white
-URxvt*color7:       #5f5f5f
-URxvt*color15:      #d0d0d0
+URxvt*color7:       #afafaf
+URxvt*color15:      #f0f0f0
 
 ! Emacs settings
 Emacs*useXIM: true
